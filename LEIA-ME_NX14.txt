@@ -1,0 +1,82 @@
+NEXUS-CUP V1.0 — NX14 CONSOLIDADO
+Build: NX14-20260920
+
+OBJETIVO
+Este pacote substitui os remendos V6–V13 por uma única árvore coerente de aplicação + BD + instalador.
+Aplicar sobre a origem E:\SW-CYBER\NEXUSCUP e executar o instalador com REPOR BD.
+
+CORREÇÕES CONSOLIDADAS
+1. Agendamento
+   - Casa/Visitante pertencem à jornada e não podem ser alterados.
+   - Escolha de data/hora e recinto.
+   - Pode criar “Outro recinto” (nome, cidade, capacidade).
+   - Recinto diferente do previsto exige motivo auditável.
+
+2. Convocatórias
+   - Casa e Visitante separados.
+   - Um único seletor “Guarda-redes titular” por equipa.
+   - Linhas dos jogadores têm apenas Convocar e Titular.
+   - Por defeito: elegíveis convocados, cinco titulares e n.º 1 como GR quando disponível.
+   - Guardar substitui a convocatória do jogo de forma atómica enquanto o jogo está AGENDADO.
+   - BD exige 3–5 titulares e exatamente um GR em campo por equipa.
+
+3. Segurança / PSP
+   - Segurança não pode finalizar antes do jogo estar FINALIZADO.
+   - Regra aplicada no frontend, API e trigger PostgreSQL.
+
+4. Clubes e plantéis
+   - Fluxo Clube -> Equipa -> Plantel.
+   - Adicionar jogador segue Clube -> Equipa -> dados/vínculo/dorsal.
+
+5. Jogos
+   - Jornadas apresentadas por cartões de jogos, não por tabela genérica.
+   - Cockpit azul/navy com score, recinto, estado e semáforos.
+
+6. Relatórios
+   - Centro de Relatórios NEXUS com lista funcional e visual consistente.
+   - Básicos: Resumo da competição, Classificação, Jogos e resultados, Resumo por jornadas.
+   - Desportivo: Marcadores, Disciplina, Faltas acumuladas.
+   - Operação: Arbitragem, Segurança, Plantéis.
+   - Controlo: Integridade e auditoria (SUPER_AUDITOR).
+   - Impressão/PDF pelo browser.
+
+7. Contas base após REPOR BD
+   - AlfCyberCop / ADMIN + SUPER_AUDITOR / mudança obrigatória no primeiro acesso.
+   - Paulo Ricardo Costa Ramalho / ADMIN + SUPER_AUDITOR / mudança obrigatória no primeiro acesso.
+   - José Silva / OPERADOR / password permanente definida / sem mudança obrigatória.
+   - Adalberto Costa / OPERADOR + LEITOR / mesma password permanente / sem mudança obrigatória.
+   - SUPER_AUDITOR apenas Alf e Paulo.
+
+8. Dataset / Super Auditoria
+   - TAÇA NEXUS histórica fica formalmente FINALIZADA, 12/12 homologados, classificação final e campeão.
+   - Incidente real de revisão de cartão vermelho EXECUTADO e reconstruível.
+   - Tentativa real de alteração de golo/resultado após fecho REJEITADA e auditada.
+   - Cadeia forense validada pelo instalador.
+   - NEXUS CUP corrente fica ABERTA, com apenas o primeiro jogo agendado.
+
+9. Instalador / sincronização
+   - REPOR BD existente apenas após confirmação explícita.
+   - Reinstalação reconhecida substitui ficheiros do produto, incluindo frontend, em vez de conservar cópias antigas.
+   - .runtime é preservado quando aplicável; a nova instalação grava configuração validada.
+   - BUILD.txt + /api/health identificam NX14-20260920.
+   - INICIAR não reutiliza um servidor antigo com build diferente; usa a instância NX14.
+
+COMO APLICAR
+1. Extrair todo o pacote sobre E:\SW-CYBER\NEXUSCUP e aceitar substituição.
+2. Executar INSTALAR.cmd.
+3. Escolher Instalação Completa.
+4. Usar a BD nexuscup e confirmar REPOR BD.
+5. Deixar o instalador abrir a aplicação.
+6. Confirmar na barra lateral a marca NX14.
+
+IMPORTANTE
+Ctrl+F5 sozinho NÃO aplica esta versão porque existem alterações PostgreSQL e de seed.
+É necessário REPOR BD para validar a release completa.
+
+VALIDAÇÃO FEITA NESTE AMBIENTE
+- node --check: frontend/app.js, backend/server.js, backend/config.mjs, installer/install.mjs, installer/database.mjs: PASS.
+- Auditoria estática da release: 12/12 requisitos críticos encontrados: PASS.
+- Hash bcrypt de José/Adalberto validado previamente contra a password definida.
+
+LIMITAÇÃO DE VALIDAÇÃO
+Este ambiente Linux não dispõe de PostgreSQL/psql nem PowerShell/WinForms. Portanto a execução real dos SQL e do wizard Windows tem de ser validada no teu PC através do fluxo acima. O instalador contém validações pós-instalação que bloqueiam o sucesso se o baseline NX14 não ficar coerente.

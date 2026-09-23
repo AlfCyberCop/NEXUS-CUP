@@ -1,0 +1,26 @@
+NEXUS-CUP V1.0 — PATCH INSTALLER + CONTAS BASE (V6)
+Data: 20/09/2026
+
+APLICAÇÃO
+1. Extrair este ZIP na raiz do projeto NEXUSCUP, substituindo os ficheiros existentes.
+2. Executar INSTALAR.cmd.
+3. Se a BD indicada já existir, autorizar explicitamente REPOR_BD / reposição no wizard.
+
+COMPORTAMENTO DA REPOSIÇÃO
+- A BD escolhida é eliminada e recriada de raiz com os SQL oficiais quando a reposição é confirmada.
+- AlfCyberCop e Paulo Ricardo Costa Ramalho regressam à password inicial do projeto e ficam com mudança obrigatória no primeiro login.
+- José Silva e Adalberto Costa são recriados como contas permanentes, ativas, sem mudança obrigatória de password.
+- Sessões anteriores desaparecem naturalmente porque a BD é recriada.
+- Super Auditoria continua exclusiva a AlfCyberCop e Paulo.
+
+CONTAS
+AlfCyberCop: Alfcybercop@nexuscup.pt — primeiro acesso obrigatório após reposição.
+Paulo Ricardo Costa Ramalho: Paulo.ramalho@nexuscup.pt — primeiro acesso obrigatório após reposição.
+José Silva: jose.silva@nexuscup.pt — credencial permanente definida no projeto.
+Adalberto Costa: adalberto.costa@nexuscup.pt — credencial permanente definida no projeto.
+
+ROLES TÉCNICAS V1.0
+- José: OPERADOR.
+- Adalberto: OPERADOR + LEITOR (mapeia UTILIZADOR + AUDITOR no modelo funcional atual).
+- Paulo: OPERADOR + LEITOR + ADMIN + SUPER_AUDITOR.
+- AlfCyberCop: OPERADOR + LEITOR + ADMIN + SUPER_AUDITOR.

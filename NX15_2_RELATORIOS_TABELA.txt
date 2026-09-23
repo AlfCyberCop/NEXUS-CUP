@@ -1,0 +1,21 @@
+NEXUS-CUP NX15.2 — RELATÓRIOS EM TABELA
+
+Alteração exclusivamente de frontend.
+
+Todos os resultados do Centro de Relatórios passam a ser apresentados em listagens/tabelas:
+- Resumo da competição
+- Classificação
+- Jogos e resultados
+- Resumo por jornadas
+- Marcadores
+- Disciplina
+- Faltas acumuladas
+- Arbitragem
+- Segurança
+- Plantéis
+- Integridade e auditoria
+
+Deixam de existir cartões individuais para cada jogo/jogador/operação dentro dos relatórios.
+O objetivo é leitura rápida, comparação por linhas e impressão/PDF mais limpa.
+
+Não altera PostgreSQL, seed, backend ou regras de negócio.

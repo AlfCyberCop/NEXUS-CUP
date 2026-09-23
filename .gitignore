@@ -1,0 +1,36 @@
+node_modules/
+.test_pgdata/
+.test_pg.log
+.runtime/
+test-results/
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.dpapi
+*.pem
+*.key
+*.p12
+*.pfx
+.pgpass
+pgpass.conf
+.npmrc
+
+# Local databases, backups and temporary artifacts
+pgdata/
+.pgdata/
+*.dump
+*.backup
+*.pid
+*.tmp
+*.temp
+*.swp
+*~
+.cache/
+coverage/
+tmp/
+.DS_Store
+Thumbs.db

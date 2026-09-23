@@ -1,0 +1,15 @@
+NEXUS-CUP V1.0 — NX15
+
+Correções consolidadas desta revisão:
+- Época FINALIZADA: Clubes e plantéis entra em modo histórico só de leitura.
+- A BD recusa adicionar/editar jogador, dorsal ou vínculo quando o contexto selecionado é uma época finalizada.
+- Plantéis são carregados no contexto da época selecionada.
+- Segurança passa a ter atalho próprio na barra lateral.
+- Os semáforos do cockpit são clicáveis: Plantéis, Arbitragem, Segurança e Jogo abrem o respetivo separador.
+- O estado de Segurança no resumo do jogo também é um atalho direto.
+- Formulário de ocorrência de segurança refeito: simples, campos condicionais, mensagens compreensíveis.
+- N.º do auto/referência pode ser curto (ex.: 212); constraints e API alinhadas.
+- Super Auditoria reestruturada com KPIs, cartões de incidentes, atividade recente e evidência legível; JSON técnico fica opcional.
+- Mantém todas as correções anteriores NX14 (instalador, reposição da BD, utilizadores, recintos, convocatórias, relatórios e integridade).
+
+Para aplicar integralmente as alterações de BD: INSTALAR.cmd -> Instalação Completa -> REPOR BD.

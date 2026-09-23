@@ -1,0 +1,1 @@
+{"name":"nexus-cup","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node backend/server.js","test":"node tests/run.mjs","install:database":"node installer/install.mjs","test:static":"node tests/release-static.mjs"},"dependencies":{"pg":"8.16.3"},"devDependencies":{"playwright-core":"^1.58.2"}}

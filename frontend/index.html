@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXUS-CUP V1.0</title>
+  <link rel="stylesheet" href="/style.css?v=151">
+</head>
+<body>
+<section id="gate">
+  <form id="login" class="login-card">
+    <div class="login-brand"><span class="brand-mark">🏆</span><div><b>NEXUS-CUP</b><small>FUTSAL · INTEGRIDADE · SEGURANÇA</small></div></div>
+    <h1>Bem-vindo</h1>
+    <p>Gestão operacional da competição NEXUS-CUP V1.0</p>
+    <label>Email<input type="email" name="email" autocomplete="username" required></label>
+    <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+    <button class="primary wide">Entrar</button>
+  </form>
+</section>
+
+<div id="shell" hidden>
+  <aside>
+    <div class="side-brand"><span class="brand-mark">🏆</span><div><b>NEXUS-CUP <span class="build-tag">NX15.2</span></b><small>FUTSAL · INTEGRIDADE · SEGURANÇA</small></div></div>
+    <section class="side-context" aria-label="Contexto da competição">
+      <span class="side-context-title">CONTEXTO</span>
+      <label><span>Época</span><select id="season"></select></label>
+      <label><span>Jornada</span><select id="round"><option value="">Todas as jornadas</option></select></label>
+      <small id="roundHint">Época completa</small>
+    </section>
+    <nav id="nav"></nav>
+    <div class="side-bottom">
+      <div class="identity-card"><span class="avatar">●</span><div><strong id="identity"></strong><small id="identityRole">Sessão autenticada</small></div></div>
+      <button id="logout" class="nav-logout">↪ <span>Terminar sessão</span></button>
+    </div>
+  </aside>
+
+  <div class="workspace">
+    <header>
+      <div class="top-context">
+        <span class="crumb">NEXUS-CUP</span><span class="crumb-sep">›</span><strong id="contextTitle">Competição</strong>
+      </div>
+
+    </header>
+    <main>
+      <div class="page-heading"><div><span class="eyebrow">NEXUS-CUP V1.0</span><h1 id="title">Dashboard operacional</h1></div></div>
+      <section id="content"></section>
+    </main>
+  </div>
+</div>
+
+<div id="message" role="status" aria-live="polite" hidden></div>
+<dialog id="modal"><div id="modalBody"></div></dialog>
+<script type="module" src="/app.js?v=151"></script>
+</body>
+</html>

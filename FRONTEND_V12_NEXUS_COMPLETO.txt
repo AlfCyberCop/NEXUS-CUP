@@ -1,0 +1,43 @@
+NEXUS-CUP V1.0 — FRONTEND V12 NEXUS
+
+Aplicar sobre:
+E:\SW-CYBER\NEXUSCUP
+
+Objetivo:
+dar identidade visual única NEXUS a toda a aplicação e substituir o centro de relatórios técnico por uma experiência funcional.
+
+RELATÓRIOS
+Básicos:
+- Resumo da competição
+- Classificação
+- Jogos e resultados
+- Resumo por jornadas
+
+Desportivo:
+- Marcadores
+- Disciplina
+- Faltas acumuladas
+
+Operação:
+- Segurança
+- Plantéis
+
+O Centro de Relatórios passa a usar uma lista lateral organizada por categoria, com o relatório ativo apresentado num painel próprio. Mantém impressão/PDF pelo browser.
+
+VISUAL GLOBAL
+- identidade navy/azul consistente;
+- cards, listas, tabelas, modais e estados com o mesmo sistema visual;
+- hover, foco, empty states e hierarquia tipográfica coerentes;
+- relatório e impressão responsivos.
+
+NÃO ALTERA:
+- PostgreSQL
+- backend
+- regras de negócio
+- instalador
+- contas/utilizadores
+
+Validação:
+node --check frontend/app.js -> PASS.
+
+Se a aplicação aberta estiver a servir C:\temp\NEXUSCUP, copiar os ficheiros frontend também para essa instalação ou reinstalar. Depois Ctrl+F5.
