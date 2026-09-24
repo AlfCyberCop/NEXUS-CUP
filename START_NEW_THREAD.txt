@@ -1,5 +1,0 @@
-Lê AGENTS.md, PRODUCT_SPEC.md e PROJECT_STATE.md.
-Não faças scan global do repositório.
-Consulta docs/HANDOFF.md apenas se precisares de detalhe técnico que não esteja nesses três ficheiros.
-
-Primeira tarefa: avalia, sem alterar código, a menor implementação necessária para fechar formalmente a Liga/época e criar os dois cenários reais de Super Auditoria definidos em PRODUCT_SPEC.md. Indica apenas componentes afetados, complexidade e risco. Não implementes até eu autorizar.

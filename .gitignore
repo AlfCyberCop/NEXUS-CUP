@@ -34,3 +34,20 @@ coverage/
 tmp/
 .DS_Store
 Thumbs.db
+
+# Superseded delivery patches and local session notes (retained locally)
+/APLICAR_FRONTEND_V13.cmd
+/APLICAR_NX15_2.cmd
+/FIX_V6_LEIA-ME.txt
+/FRONTEND_V12_NEXUS_COMPLETO.txt
+/FRONTEND_V8_LEIA-ME.txt
+/LEIA-ME_NX14.txt
+/LEIA-ME_NX15.txt
+/LEIA-ME_PATCH.txt
+/NX15_2_RELATORIOS_TABELA.txt
+/PROMPT_NEDEX.txt
+/START_NEW_THREAD.txt
+/HANDOFF.md
+/docs/RELATORIO_FINAL.md
+/docs/reference-inventory.json
+/NEXUS-CUP V1.0 - Relatório Técnico.pdf.pdf

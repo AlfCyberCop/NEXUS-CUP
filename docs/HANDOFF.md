@@ -1,10 +1,12 @@
 # Handoff técnico — NEXUS-CUP V1.0
 
+> Documento histórico da fase de desenvolvimento. As ordens de paragem e restrições de infraestrutura abaixo descrevem essa fase; prevalecem as instruções atuais de André e o estado efetivamente instalado.
+
 ## Instrução vigente e estado de entrega
 
 O utilizador mandou parar imediatamente pesquisas, testes e alterações funcionais, manter o código/testes atuais e gastar o restante trabalho apenas no relatório/handoff. **Não retomar implementação nem repetir testes sem nova instrução do utilizador.** Este documento não constitui autorização para continuar.
 
-Relatório completo: [RELATORIO_FINAL.md](RELATORIO_FINAL.md). A execução terminou com 67 verificações aprovadas nas três últimas suites, mas com limitações explícitas; não foi declarada prontidão global.
+Relatório dessa fase: [relatório provisório no histórico](https://github.com/AlfCyberCop/NEXUS-CUP/blob/6fcb180/docs/RELATORIO_FINAL.md). Relatório entregue: [PDF técnico](<NEXUS-CUP V1.0 - Relatório Técnico.pdf>). A execução então documentada terminou com 67 verificações aprovadas nas três últimas suites, mas com limitações explícitas; não foi declarada prontidão global nessa fase.
 
 ## Autoridade permanente
 
@@ -26,7 +28,7 @@ Relatório completo: [RELATORIO_FINAL.md](RELATORIO_FINAL.md). A execução term
 7. `frontend/`: HTML/CSS/JS sem framework; sidebar clara, cockpit de cinco separadores, formulários por contexto.
 8. `installer/`: aplicação transacional do baseline, criação de role runtime, validação interna e wrappers PowerShell/DPAPI.
 
-Não houve cópia integral de código legado. Foram reaproveitados conceitos e direção visual. `docs/reference-inventory.json` contém hashes/timestamps de 22 fontes antigas. Último SQL antigo modificado observado: `08_liga_placard_2025_26.sql`, UTC 2026-09-20 14:11:36.570; não foi recuperado log da sessão antiga que prove o último comando.
+Não houve cópia integral de código legado. Foram reaproveitados conceitos e direção visual. O [inventário histórico](https://github.com/AlfCyberCop/NEXUS-CUP/blob/6fcb180/docs/reference-inventory.json) contém hashes/timestamps de 22 fontes antigas. Último SQL antigo modificado observado: `08_liga_placard_2025_26.sql`, UTC 2026-09-20 14:11:36.570; não foi recuperado log da sessão antiga que prove o último comando.
 
 ## Estado operacional no momento da paragem
 
